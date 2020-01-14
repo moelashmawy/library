@@ -121,6 +121,8 @@ function render() {
             myLibrary.splice(itemIndex, 1);
             itemDiv.style.display = "none"
             console.log(myLibrary);
+            container.innerHTML = ""
+            render()
         })
         
         /**
