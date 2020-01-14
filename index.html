@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <p id="page-title">Books Library</p>
+
+    <body>
+        <button id="add-book" onclick="showAddBook()">New Book</button>
+        
+        <form id="the-form" action="/">
+            <button id="hide-book" onclick="hideAddBook()">X</button>
+            <hr>
+            <label id="letter"><i>T</i></label>
+            <input type="text" id="book-title" placeholder="Title" value="" required/>
+            <label id="letter"><i>A</i></label>
+            <input type="text" id="book-author" placeholder="Author" value="" required/>
+            <label id="letter" ><i>P</i></label>
+            <input type="text" id="book-pages" pattern="[0-9999]" placeholder="Pages" value="" required/>
+            <label id="letter" ><i>I</i></label>
+            <input type="text" id="book-image-src" placeholder="Image Link" value=""/>
+            
+            <hr>
+            <div class="read">
+                
+                <label><input type="radio" name="readr" value="1" id="read"/> Read</label>
+                
+                <label><input type="radio" name="readr" value="0" id="not-read"/> Not Read</label>
+            </div>
+            <hr>
+            <div class="btn-block">
+              <button type="submit" onclick="addBook()">Add</button>
+            </div>
+          </form>
+
+        <div id="container">
+            <!--This is my html model and i added everything dynamically using JS-->
+            <!--
+            <div id="item">
+                <img src="images/sample.jpg" id="book-image">
+                <div id="text">
+                    <div><p id="title">Title:</p></div>
+                    <div><p id="author">Author:</p></div>
+                    <div><p id="pages">Pages:</p></div>
+                    <div><p id="status">Status:</p></div>
+                </div>
+
+                <div id="edit-menu">
+                    <button id="edit">Edit</button>
+                    <button id="delete" onclick="deleteBook()">Delete</button>
+                    <input type="checkbox">
+                </div>
+            </div>
+            -->
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
